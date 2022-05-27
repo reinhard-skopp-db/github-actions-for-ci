@@ -6,7 +6,10 @@
 name: Node CI
 
  
-
+      - uses: actions/upload-artifact@master
+        with:
+          name: webpack artifacts
+          path: public/
 on: [push]
 
  
